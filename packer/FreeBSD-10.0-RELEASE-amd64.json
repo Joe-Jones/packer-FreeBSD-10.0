@@ -2,8 +2,8 @@
   "builders": [
     {
       "type": "virtualbox-iso",
-      "iso_url": "http://ftp.freebsd.org/pub/FreeBSD/releases/amd64/amd64/ISO-IMAGES/10.0/FreeBSD-10.0-RELEASE-amd64-disc1.iso",
-      "iso_checksum": "fd25619fa0d69c29bea8347b1070ac75",
+      "iso_url": "file:///home/joe/Downloads/FreeBSD-10.2-RELEASE-amd64-disc1.iso",
+      "iso_checksum": "ab5842858500b7a62889df39a1932343",
       "iso_checksum_type": "md5",
       "ssh_username": "vagrant",
       "ssh_password": "vagrant",
@@ -45,7 +45,7 @@
   ],
   "post-processors": [
     {
-      "output": "./builds/freebsd-10.0-amd64.box",
+      "output": "./builds/freebsd-10.2-amd64.box",
       "type": "vagrant"
     }
   ],
